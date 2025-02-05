@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOTSTRAP INSTAGRAM FOTOS WEB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    .icon-btn {
+      width: 20px;
+      /* 1/2 cm ≈ 20px */
+      height: 20px;
+      /* 1/2 cm ≈ 20px */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      /* Tamaño del icono */
+      padding: 5px;
+    }
+    .icon-btn i {
+      color: black;
+      /* Color del icono */
+    }
+    .nav-link.active i {
+      color: green;
+      /* Color del icono cuando está activo */
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- Incluir FontAwesome (opcional si prefieres estos iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container p-0">
+      <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path
+            d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+        </svg> INSTAGRAM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+        <!-- boton gris -->
+        <form class="d-flex" role="search">
+          <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create new post
+          </button>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-gear me-1"></i> <!-- Engranaje -->
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra de navegación con iconos -->
+  <nav>
+    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+      <button class="nav-link active icon-btn" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+        type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+        <i class="bi bi-grid-3x3-gap"></i> <!-- Icono de cuadritos -->
+      </button>
+      <button class="nav-link icon-btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+        <i class="bi bi-grid-3x3-gap"></i> <!-- Icono de cuadritos -->
+      </button>
+    </div>
+  </nav>
+  <!-- Contenido de las pestañas -->
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <div class="container">
+        <div class="row">
+          <div class="col gx-1">
+            <img src="https://picsum.photos/400/200?random=1" class="w-100" alt="">
+          </div>
+          <div class="col gx-1">
+            <img src="https://picsum.photos/400/200?random=2" class="w-100" alt="">
+          </div>
+          <div class="col gx-1">
+            <img src="https://picsum.photos/400/200?random=3" class="w-100" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col gx-1 gy-1">
+            <img src="https://picsum.photos/400/200?random=4" class="w-100" alt="">
+          </div>
+          <div class="col gx-1 gy-1">
+            <img src="https://picsum.photos/400/200?random=5" class="w-100" alt="">
+          </div>
+          <div class="col gx-1 gy-1">
+            <img src="https://picsum.photos/400/200?random=6" class="w-100" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col gx-1 gy-1">
+            <img src="https://picsum.photos/400/200?random=7" class="w-100" alt="">
+          </div>
+          <div class="col gx-1 gy-1">
+            <img src="https://picsum.photos/400/200?random=8" class="w-100" alt="">
+          </div>
+          <div class="col gx-1 gy-1">
+            <img src="https://picsum.photos/400/200?random=9" class="w-100" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+      <div class="row">
+        <div class="col">
+          <div class="card mx-auto mt-4" style="width: 40rem">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h5>My first photo</h5>
+              <span class="text-black-50">1/2</span>
+            </div>
+            <img src="https://picsum.photos/400/200?random=10" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p><strong>25 likes</strong></p>
+              <p class="card-text">
+                This is my first photo of the feed. this is a multi line
+                comment for testing purposes. I am learning to code with
+                <strong>#BreatheCode</strong>
+              </p>
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-heart me-1"></i>
+                <textarea class="form-control h-25" rows="1" placeholder="Comment"></textarea>
+                <i class="fa-solid fa-ellipsis-vertical ms-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto mt-4" style="width: 40rem">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h5>My second photo</h5>
+              <span class="text-black-50">2/2</span>
+            </div>
+            <img src="https://picsum.photos/400/200?random=2" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p><strong>204 likes</strong></p>
+              <p class="card-text">
+                This is my first photo of the feed. this is a multi line
+                comment for testing purposes. I am learning to code with
+                <strong>#BreatheCode</strong>
+              </p>
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-heart me-1"></i>
+                <textarea class="form-control h-25" rows="1" placeholder="Comment"></textarea>
+                <i class="fa-solid fa-ellipsis-vertical ms-1"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Caption:</h5>
+          <div class="mb-3"><textarea name="" id="" class="form-control text center">Ad the caption of your post here</textarea></div>
+          
+          <div class="justify-content-start">
+            <span class="border mt-2 p-2"><i class="bi bi-camera me-2"></i></span> <!-- Ícono de Cámara -->
+            <span class="border mt-2 p-2"><i class="bi bi-geo-alt"></i></span> <!-- Ícono de Ubicación -->
+          </div>
+        </div>
+
+        <div class="modal-footer justify-content-end d-flex">
+          <div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
